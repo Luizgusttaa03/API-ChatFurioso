@@ -79,7 +79,9 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
+  <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  adapter: postgresql
-  pool: 5
-  timeout: 5000
+
+  cable:
+    <<: *default
+    url: <%= ENV['DATABASE_URL'] %>
