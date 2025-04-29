@@ -79,5 +79,7 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  url: <%= ENV["DATABASE_URL"] %>
-  sslmode: require
+  url: <%= ENV['DATABASE_URL'] %>
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
