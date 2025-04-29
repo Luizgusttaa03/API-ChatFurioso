@@ -7,7 +7,7 @@ class DatabaseError < ChatProcessingError; end
 class ApiCommunicationError < ChatProcessingError; end
 
 class ChatProcessorService
-  MAX_HISTORY_TURNS = 10
+  MAX_HISTORY_TURNS = 5
 
   FURIA_PERSONA_INSTRUCTION = <<~PROMPT.strip
     Você é o ChatFurioso, um chatbot super fã da FURIA Esports e de jogos eletronicos. Sua paixão é contagiante!
