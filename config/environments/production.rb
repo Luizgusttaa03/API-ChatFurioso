@@ -85,5 +85,5 @@ Rails.application.configure do
   # Skip DNS rebinding protection for the default health check endpoint.
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
-  config.hosts = [ "https://chat-furioso.vercel.app", "https://organic-mirelle-luizgusttaa03-8b00ead2.koyeb.app", "https://organic-mirelle-luizgusttaa03-8b00ead2.koyeb.app" ]
+  config.hosts = [ "https://chat-furioso.vercel.app", "organic-mirelle-luizgusttaa03-8b00ead2.koyeb.app", "organic-mirelle-luizgusttaa03-8b00ead2.koyeb.app" ]
 end
