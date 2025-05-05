@@ -44,7 +44,6 @@ class ChatController < ApplicationController
   def log_and_render_error(session_uuid:, exception:, title:, detail:, status:)
     Rails.logger.error "[ChatController] Error for session #{session_uuid}: #{exception.class} - #{exception.message}"
     unless [  ApiCommunicationError,
-              DatabaseSaveError,
               ActionController::ParameterMissing ].include?(exception.class)
       Rails.logger.error exception.backtrace.join("\n") if exception.respond_to?(:backtrace) && exception.backtrace
     end
